@@ -1,6 +1,6 @@
 # START KIT SASS
 
-# 📂 Cấu trúc thư mục
+## 📂 Cấu trúc thư mục
 ```
 start-kit-sass
 ├── .vscode

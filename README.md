@@ -6,19 +6,19 @@ start-kit-sass
 ├── .vscode
 │   └── settings.json
 ├── assets
-│   ├── css
-│   ├── font
-│   ├── icon
-│   ├── img
-│   └── js
+│   ├── css/
+│   ├── font/
+│   ├── icon/
+│   ├── img/
+│   └── js/
 ├── scss
-│   ├── base
-│   ├── layout
-│   ├── pages
+│   ├── base/
+│   ├── layout/
+│   ├── pages/
 │   └── style.scss
 ├── vendor
-│   ├── bootstrap-4.5.3
-│   ├── bootstrap-table
+│   ├── bootstrap-4.5.3/
+│   ├── bootstrap-table/
 │   ├── _jquery.min.js
 │   ├── moment.min.js
 │   └── popper.min.js
@@ -48,7 +48,11 @@ Nếu dùng **Visual Studio Code** hãy cài các extensions này.
 - **Beautify css/sass/scss/less:** format file scss/sass, Nên format đê cho dễ nhìn.
 
 Các config này nằm trong folder 
-```.vscode** -> **settings.json**``` ở gốc thư mục. Nếu chưa có thì hãy tạo nó.
+```
+├── .vscode
+│   └── settings.json
+``` 
+ở gốc thư mục. Nếu chưa có thì hãy tạo nó.
 ## Folder assets
 - **css/:** file css khi được compile từ file scss.
 - **font/:** chứa font của dự án.

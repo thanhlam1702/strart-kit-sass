@@ -1,0 +1,12 @@
+// base file
+@import "base/_variables";
+@import 'base/_reset';
+@import 'base/_mixins';
+@import 'base/_lib';
+@import 'base/_elements';
+
+// import layout
+@import 'layout/layout';
+@import 'layout/header';
+// page file
+@import "pages/_home";

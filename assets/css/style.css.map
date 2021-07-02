@@ -1,0 +1,14 @@
+{
+    "version": 3,
+    "mappings": "AC8BA,oCAAoC;AG7BpC,AAAA,KAAK,CAAA;EACD,SAAS,EAAE,IAAI;CAClB;;AAED,AAAA,IAAI,CAAA;EAEA,WAAW,EAAE,GAAG;EAChB,UAAU,EAAC,OAAO;EAClB,WAAW,EAAE,mCAAmC;CACnD",
+    "sources": [
+        "../../scss/style.scss",
+        "../../scss/base/_variables.scss",
+        "../../scss/base/_mixins.scss",
+        "../../scss/base/_lib.scss",
+        "../../scss/base/_elements.scss",
+        "../../scss/pages/_home.scss"
+    ],
+    "names": [],
+    "file": "style.css"
+}

@@ -1,0 +1,47 @@
+$cl-primary: #7854F7;
+$cl-second: #FAA61A;
+
+$cl-info: #2F80ED;
+$cl-success: #27AE60;
+$cl-pending: #E2B93B;
+$cl-error: #EB5757;
+
+$black-1: #0E3749;
+$black-2: #4B6277;
+$black-3: #648999;
+
+$gray-1: #CAD8EB;
+$gray-1: #DBE4F2;
+$gray-3: #E2E9F2;
+$gray-4: #F9FAFB;
+
+$text-1: #272D4E;
+$text-3: #71899E;
+$text-2: #4B6277;
+
+$bg-fff: #fff;
+$text-white: #FFFFFF;
+$text-black: #000000;
+
+$cl-border-1: #DBE4F2;
+
+$t: 0.4s;
+$cubic: cubic-bezier(0.75, 0.06, 0.05, 1);
+
+/*GRID - media queries breakpoints*/
+$xxs-min: 576px;
+$xs-min: 768px;
+$sm-min: 992px;
+$md-min: 1200px;
+$lg-min: 1600px;
+
+$xxs-max: ($xxs-min - 1);
+$xs-max: ($xs-min - 1);
+$sm-max: ($sm-min - 1);
+$md-max: ($md-min - 1);
+$lg-max: ($lg-min - 1);
+
+
+$max-width: 1600px;
+$container-max-width: $max-width;
+// $container-w: 1200px;

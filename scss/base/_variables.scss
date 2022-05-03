@@ -1,4 +1,5 @@
-$cl-primary: #7854F7;
+$cl-primary: #3865F3;
+$cl-primary-hover: #3864f346;
 $cl-second: #FAA61A;
 
 $cl-info: #2F80ED;
@@ -15,9 +16,10 @@ $gray-1: #DBE4F2;
 $gray-3: #E2E9F2;
 $gray-4: #F9FAFB;
 
-$text-1: #272D4E;
+$text-1: #222222;
+$text-2: #94959B;
 $text-3: #71899E;
-$text-2: #4B6277;
+$text-4: #FFFFFF;
 
 $bg-fff: #fff;
 $text-white: #FFFFFF;
@@ -42,6 +44,6 @@ $md-max: ($md-min - 1);
 $lg-max: ($lg-min - 1);
 
 
-$max-width: 1600px;
+$max-width: 1280px;
 $container-max-width: $max-width;
 // $container-w: 1200px;

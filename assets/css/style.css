@@ -148,6 +148,10 @@ img {
   vertical-align: middle;
 }
 
+.active-text {
+  color: #3865F3;
+}
+
 .input-radio input {
   display: none;
 }
@@ -157,7 +161,7 @@ img {
 }
 
 .input-radio input:checked + label:before {
-  border: 1px solid #7854F7;
+  border: 1px solid #3865F3;
 }
 
 .input-radio label.radiobox {
@@ -184,7 +188,7 @@ img {
   position: absolute;
   content: '';
   display: none;
-  background: #7854F7;
+  background: #3865F3;
   border-radius: 50%;
   height: 8px;
   left: 4px;
@@ -201,8 +205,8 @@ img {
 }
 
 .input-check input:checked + label:before {
-  background: #7854F7;
-  border-color: #7854F7;
+  background: #3865F3;
+  border-color: #3865F3;
 }
 
 .input-check label.checkbox {
@@ -242,6 +246,25 @@ img {
   width: 5px;
 }
 
+.title {
+  text-align: center;
+  font-family: pop;
+}
+
+.title__text {
+  font-size: 40px;
+  font-weight: 600;
+  color: #222222;
+  line-height: 60px;
+}
+
+.title__desc {
+  font-size: 20px;
+  font-weight: 300;
+  color: #94959B;
+  line-height: 30px;
+}
+
 .container {
   width: 100%;
   padding-left: 15px;
@@ -278,6 +301,286 @@ img {
 
 @media (min-width: 1200px) {
   .container {
-    max-width: 1600px;
+    max-width: 1280px;
   }
+}
+
+header {
+  height: 100px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+header .container {
+  width: initial;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .logo {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .logo__contain {
+  display: block;
+  height: 56px;
+}
+
+header .menu {
+  margin-left: 100px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .menu__item {
+  height: 100%;
+}
+
+header .menu__item-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 28px;
+  height: 100%;
+  font-family: pop;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 600;
+  color: #222222;
+  text-decoration: none;
+  position: relative;
+}
+
+header .menu__item-text::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 0;
+  height: 2px;
+  background-color: #3865F3;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+}
+
+header .menu__item-text:hover::after {
+  width: 100%;
+  left: 0;
+  right: initial;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+}
+
+header .auth {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: auto;
+}
+
+header .auth__btn {
+  font-family: pop;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 16px 24px;
+  background-color: #3865F3;
+  border-radius: 12px;
+  color: #FFFFFF;
+}
+
+header .auth__btn.--register {
+  margin-left: 24px;
+  background-color: initial;
+  color: #3865F3;
+  border: 2px solid #3865F3;
+}
+
+header .auth__btn.--register:hover {
+  background-color: #3864f346;
+}
+
+header .btn-menu {
+  display: none;
+  width: 40px;
+  height: 32px;
+  position: relative;
+  margin-left: auto;
+}
+
+header .btn-menu span {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #3865F3;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  position: absolute;
+}
+
+header .btn-menu::before, header .btn-menu::after {
+  content: '';
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: #3865F3;
+}
+
+header .btn-menu::after {
+  top: initial;
+  bottom: 0;
+}
+
+@media (max-width: 1199px) {
+  header .menu {
+    margin-left: 24px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  header .logo__contain {
+    height: 44px;
+  }
+  header .menu__item {
+    height: 100%;
+  }
+  header .menu__item-text {
+    font-size: 14px;
+    line-height: 20px;
+    padding: 0 10px;
+  }
+  header .auth {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-left: auto;
+  }
+  header .auth__btn {
+    font-size: 14px;
+    line-height: 20px;
+    padding: 8px 16px;
+  }
+  header .auth__btn.--register {
+    margin-left: 12px;
+    border: 1px solid #3865F3;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  header {
+    height: 60px;
+  }
+  header .menu {
+    display: none;
+    margin-left: 100px;
+    height: 100%;
+  }
+  header .menu__item {
+    height: 100%;
+  }
+  header .menu__item-text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0 28px;
+    height: 100%;
+    font-family: pop;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 600;
+    color: #222222;
+    text-decoration: none;
+    position: relative;
+  }
+  header .menu__item-text::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 2px;
+    background-color: #3865F3;
+    -webkit-transition: 0.4s ease-in-out;
+    transition: 0.4s ease-in-out;
+  }
+  header .menu__item-text:hover::after {
+    width: 100%;
+    left: 0;
+    right: initial;
+    -webkit-transition: 0.4s ease-in-out;
+    transition: 0.4s ease-in-out;
+  }
+  header .auth {
+    display: none;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-left: auto;
+  }
+  header .auth__btn {
+    font-family: pop;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 16px 24px;
+    background-color: #3865F3;
+    border-radius: 12px;
+    color: #FFFFFF;
+  }
+  header .auth__btn.--register {
+    margin-left: 24px;
+    background-color: initial;
+    color: #3865F3;
+    border: 2px solid #3865F3;
+  }
+  header .auth__btn.--register:hover {
+    background-color: #3864f346;
+  }
+  header .btn-menu {
+    display: block;
+  }
+}
+
+.home {
+  padding-top: 100px;
+}
+
+.home .veshion .title {
+  text-align: left;
 }

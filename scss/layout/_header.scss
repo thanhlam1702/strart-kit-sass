@@ -1,1 +1,263 @@
-header{}
+header {
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+
+    .container {
+        width: initial;
+        display: flex;
+        // justify-content: space-between;
+        height: 100%;
+        align-items: center;
+    }
+
+    .logo {
+        flex-shrink: 0;
+        height: 100%;
+        display: flex;
+        align-items: center;
+
+        &__contain {
+            display: block;
+            height: 56px;
+        }
+    }
+
+    .menu {
+        margin-left: 100px;
+        height: 100%;
+        display: flex;
+
+        &__item {
+            height: 100%;
+
+            &-text {
+                display: flex;
+                align-items: center;
+                padding: 0 28px;
+                height: 100%;
+                font-family: pop;
+                font-size: 18px;
+                line-height: 24px;
+                font-weight: 600;
+                color: $text-1;
+                text-decoration: none;
+                position: relative;
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    bottom: 0;
+                    right: 0;
+                    width: 0;
+                    height: 2px;
+                    background-color: $cl-primary;
+                    transition: 0.4s ease-in-out;
+                }
+
+                &:hover::after {
+                    width: 100%;
+                    left: 0;
+                    right: initial;
+                    transition: 0.4s ease-in-out;
+                }
+            }
+        }
+    }
+
+    .auth {
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+
+        &__btn {
+            font-family: pop;
+            font-size: 18px;
+            line-height: 24px;
+            font-weight: 600;
+            text-decoration: none;
+            padding: 16px 24px;
+            background-color: $cl-primary;
+            border-radius: 12px;
+            color: $text-4;
+
+            &.--register {
+                margin-left: 24px;
+                background-color: initial;
+                color: $cl-primary;
+                border: 2px solid $cl-primary;
+
+                &:hover {
+                    background-color: $cl-primary-hover;
+                }
+            }
+        }
+
+    }
+
+    .btn-menu {
+        display: none;
+        width: 40px;
+        height: 32px;
+        position: relative;
+        margin-left: auto;
+
+        span {
+            display: block;
+            width: 100%;
+            height: 2px;
+            background-color: $cl-primary;
+            @include mid();
+        }
+
+        &::before, &::after{
+            content: '';
+            position: absolute;
+            height: 2px;
+            width: 100%;
+            top: 0;
+            left: 0;
+            background-color: $cl-primary;
+        }
+
+        &::after{
+            top: initial;
+            bottom: 0;
+        }
+    }
+}
+
+@include desktop {
+    header {
+        .menu {
+            margin-left: 24px;
+        }
+    }
+}
+
+@include tablet {
+    header {
+        .logo {
+            &__contain {
+                height: 44px;
+            }
+        }
+
+        .menu {
+            &__item {
+                height: 100%;
+
+                &-text {
+                    font-size: 14px;
+                    line-height: 20px;
+                    padding: 0 10px;
+                }
+            }
+        }
+
+        .auth {
+            display: flex;
+            align-items: center;
+            margin-left: auto;
+
+            &__btn {
+                font-size: 14px;
+                line-height: 20px;
+                padding: 8px 16px;
+
+                &.--register {
+                    margin-left: 12px;
+                    border: 1px solid $cl-primary;
+                }
+            }
+
+        }
+    }
+}
+
+@include mobile {
+    header {
+        height: 60px;
+
+        .menu {
+            display: none;
+            margin-left: 100px;
+            height: 100%;
+
+            &__item {
+                height: 100%;
+
+                &-text {
+                    display: flex;
+                    align-items: center;
+                    padding: 0 28px;
+                    height: 100%;
+                    font-family: pop;
+                    font-size: 18px;
+                    line-height: 24px;
+                    font-weight: 600;
+                    color: $text-1;
+                    text-decoration: none;
+                    position: relative;
+
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        bottom: 0;
+                        right: 0;
+                        width: 0;
+                        height: 2px;
+                        background-color: $cl-primary;
+                        transition: 0.4s ease-in-out;
+                    }
+
+                    &:hover::after {
+                        width: 100%;
+                        left: 0;
+                        right: initial;
+                        transition: 0.4s ease-in-out;
+                    }
+                }
+            }
+        }
+
+        .auth {
+            display: none;
+            align-items: center;
+            margin-left: auto;
+
+            &__btn {
+                font-family: pop;
+                font-size: 18px;
+                line-height: 24px;
+                font-weight: 600;
+                text-decoration: none;
+                padding: 16px 24px;
+                background-color: $cl-primary;
+                border-radius: 12px;
+                color: $text-4;
+
+                &.--register {
+                    margin-left: 24px;
+                    background-color: initial;
+                    color: $cl-primary;
+                    border: 2px solid $cl-primary;
+
+                    &:hover {
+                        background-color: $cl-primary-hover;
+                    }
+                }
+            }
+
+        }
+
+        .btn-menu{
+            display: block;
+        }
+
+
+    }
+}
